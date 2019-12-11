@@ -109,11 +109,16 @@ strong, b, h1, h2, h3, h4, h5, h6{
 /* ---------------------------------reset styles-------------------------------------------------------- */
 /* ---------------------------------color styles-------------------------------------------------------- */
 $red:#e8645a;
+$redLight:#e1524b;
 $redDark:#e2534b;
 $white:#fff;
 $green:#76c7c0;
 $greenTwo:#62a29e;
 $greenThree:#528b86;
+$greenFourth:#7f8c8c;
+$gray:#777777;
+$meduimGray:#f8f8f8;
+$lightGray:#ececec;
 .transition{
     transition: all .3s linear;
 }
@@ -234,7 +239,7 @@ $greenThree:#528b86;
 .slider-container{
     .item{
         height: 500px;
-        background-color: #7f8c8c;
+        background-color: $greenFourth;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -318,19 +323,20 @@ $greenThree:#528b86;
 }
 .intro{
     margin-bottom: 50px;
-    .container{
-        background-color: #ececec;
+    .intro-container{
         padding: 15px 30px;
-        .itnro-title{
+        background-color: $lightGray;
+        border-radius: 5px;
+        .itnro-title{ 
             font-size: 30px;
             line-height: 36px;
-            color: #7f8c8c;
+            color: $greenFourth;
             font-weight: 600;
         }
         .itnro-text{
             font-size: 13px;
             line-height: 21px;
-            color: #777777;
+            color: $gray;
         }
         .intro-more{
             display: block;
@@ -364,7 +370,7 @@ $greenThree:#528b86;
     .services-block{
         margin-bottom: 50px;
         .services-item{
-            background-color: #f8f8f8;
+            background-color: $meduimGray;
             border-radius: 5px;
             padding:45px 20px;
             text-align: center;
@@ -396,7 +402,7 @@ $greenThree:#528b86;
             .services-item-name{
                 font-size: 16px;
                 line-height: 20px;
-                color: #7f8c8c;
+                color: $greenFourth;
                 font-weight: 800;
                 margin-bottom: 25px;
                 text-transform: uppercase;
@@ -404,7 +410,7 @@ $greenThree:#528b86;
             .services-item-desc{
                 font-size: 13px;
                 line-height: 21px;
-                color: #777777;
+                color: $gray;
             }
             .services-item-more{
                 position: absolute;
@@ -431,7 +437,7 @@ $greenThree:#528b86;
     }
 }
 .about{
-    background-color: #ececec;
+    background-color: $lightGray;
     position: relative;
     padding-top: 70px;
     padding-bottom: 60px;
@@ -449,14 +455,14 @@ $greenThree:#528b86;
     .about-title{ 
         font-size: 40px;
         line-height: 48px;
-        color: #e1524b;
+        color: $redLight;
         font-weight: 600;
         text-align: center;
     }
     .about-text{
         font-size: 13px;
         line-height: 21px;
-        color: #777777;
+        color: $gray;
         text-align: center;
     }
     .browser-block{
@@ -478,7 +484,7 @@ $greenThree:#528b86;
         .choose-block__title{
             font-size: 16px;
             line-height: 20px;
-            color: #7f8c8c;
+            color: $greenFourth;
             font-weight: 800;
             margin-bottom: 35px;
         }
@@ -486,7 +492,7 @@ $greenThree:#528b86;
             li{
                 font-size: 13px;
                 line-height: 24px;
-                color: #777777;
+                color: $gray;
                 position: relative;
                 padding-left: 20px;
                 &::before{
@@ -495,7 +501,7 @@ $greenThree:#528b86;
                     position: absolute;
                     font-size: 12px;
                     left: 3px;
-                    color: #e1524b;
+                    color: $redLight;
                    
                 }
             }
@@ -510,9 +516,9 @@ $greenThree:#528b86;
         .skils-block__text{
             font-size: 13px;
             line-height: 25px;
-            color: #777777;
+            color: $gray;
             a{
-                color: #e1524b;
+                color: $redLight;
                 text-decoration: underline;
             }
         }
@@ -524,7 +530,7 @@ $greenThree:#528b86;
                 .skils-block__number{
                     font-size: 30px;
                     line-height: 1;
-                    color: #7f8c8c;
+                    color: $greenFourth;
                     font-weight: 800;
                     text-align: center;
                     position: absolute;
@@ -536,7 +542,7 @@ $greenThree:#528b86;
             .skils-block__text{
                 font-size: 16px;
                 line-height: 19px;
-                color: #7f8c8c;
+                color: $greenFourth;
                 font-weight: 800;
                 text-align: center;
                 margin-top: 20px;
@@ -548,7 +554,7 @@ $greenThree:#528b86;
         .testemoials-block__title{
             font-size: 16px;
             line-height: 20px;
-            color: #7f8c8c;
+            color: $greenFourth;
             font-weight: 800;
             margin-bottom: 20px;
         }
@@ -556,10 +562,10 @@ $greenThree:#528b86;
             .testemoials-block__text{
                 font-size: 13px;
                 line-height: 25px;
-                color: #777777;
+                color: $gray;
                 padding: 15px;
                 border-radius: 5px;
-                background-color: #f8f8f8;
+                background-color: $meduimGray;
                 position: relative;
                 &::after{
                     content: '';
@@ -571,13 +577,13 @@ $greenThree:#528b86;
                     height: 0;
                     border-style: solid;
                     border-width: 0 25px 25px 0;
-                    border-color: transparent #f8f8f8 transparent transparent;
+                    border-color: transparent $meduimGray transparent transparent;
                 }
             }
             .testemoials-block__name{
                 font-size: 16px;
                 line-height: 30px;
-                color: #777777;
+                color: $gray;
                 font-weight: 600;
                 padding-left: 60px;
             }
@@ -585,14 +591,14 @@ $greenThree:#528b86;
     }
 }
 .clients{
-    background-color: #ececec;
+    background-color: $lightGray;
     .flex-row{
         align-items: center;
     }
     .clients-title{
         font-size: 16px;
         line-height: 19px;
-        color: #7f8c8c;
+        color: $greenFourth;
         font-weight: 800;
     }
     .block-line{
@@ -626,7 +632,7 @@ $greenThree:#528b86;
             height: 40px;
             border-radius: 5px;
             background-color: #98a3a3;
-            border-bottom: 3px solid #7f8c8c;
+            border-bottom: 3px solid $greenFourth;
             transition: all .3s linear;
             &:hover{
                 background-color: $redDark;
@@ -870,7 +876,7 @@ $greenThree:#528b86;
         }
     }
     .intro {
-        .container {
+        .intro-container {
             .intro-more{
                 margin: 20px auto 0;
             }
@@ -909,6 +915,12 @@ $greenThree:#528b86;
                     max-width: 70%;
                 }
             }
+        }
+    }
+    .intro{
+        .intro-container{
+            margin-left: 0;
+            margin-right: 0;
         }
     }
     .services{

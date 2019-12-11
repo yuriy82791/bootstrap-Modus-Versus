@@ -349,25 +349,26 @@ strong, b, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 50px;
 }
 
-.intro .container {
-  background-color: #ececec;
+.intro .intro-container {
   padding: 15px 30px;
+  background-color: #ececec;
+  border-radius: 5px;
 }
 
-.intro .container .itnro-title {
+.intro .intro-container .itnro-title {
   font-size: 30px;
   line-height: 36px;
   color: #7f8c8c;
   font-weight: 600;
 }
 
-.intro .container .itnro-text {
+.intro .intro-container .itnro-text {
   font-size: 13px;
   line-height: 21px;
   color: #777777;
 }
 
-.intro .container .intro-more {
+.intro .intro-container .intro-more {
   display: block;
   margin-left: auto;
   border-radius: 5px;
@@ -386,7 +387,7 @@ strong, b, h1, h2, h3, h4, h5, h6 {
   transition: all .3s linear;
 }
 
-.intro .container .intro-more:hover {
+.intro .intro-container .intro-more:hover {
   background-color: #62a29e;
   border-color: #528b86;
 }
@@ -947,7 +948,7 @@ strong, b, h1, h2, h3, h4, h5, h6 {
     padding: 10px 20px;
     max-width: 350px;
   }
-  .intro .container .intro-more {
+  .intro .intro-container .intro-more {
     margin: 20px auto 0;
   }
   .about .skils-block {
@@ -980,6 +981,10 @@ strong, b, h1, h2, h3, h4, h5, h6 {
     line-height: 18px;
     padding: 10px;
     max-width: 70%;
+  }
+  .intro .intro-container {
+    margin-left: 0;
+    margin-right: 0;
   }
   .services .container {
     padding-left: 15px;
